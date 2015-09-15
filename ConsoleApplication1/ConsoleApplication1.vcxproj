@@ -154,12 +154,6 @@
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="wrapper.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WorkaroundLib\WorkaroundLib.vcxproj">
-      <Project>{e758580e-8968-4b18-8fbb-2e802bfa34fd}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

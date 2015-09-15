@@ -10,7 +10,10 @@
 #include <math.h>
 
 extern "C" __declspec(noinline)
-double  __cdecl my_exp(_In_ double _X); // moved implementation to wrapper.cpp
+double  __cdecl my_exp(_In_ double _X)
+{
+	return 2 * exp(_X);
+}
 
 __declspec(noinline)
 double _vectorcall break_exp(__m128d xy)

@@ -1,8 +1,9 @@
 PUBLIC	exp
-EXTRN __imp_exp:PROC
+EXTRN imp_exp:PROC
 _TEXT	SEGMENT
 exp	PROC
-	jmp         qword ptr [__imp_exp]
+	movlhps xmm0,xmm0
+	jmp         qword ptr [imp_exp]
 exp ENDP
 _TEXT	ENDS
 END
